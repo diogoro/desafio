@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  redis-local:
+    image: redis
+    container_name: redis-local
+    ports:
+      - "6379:6379"
+    networks:
+      - link
+  api:
+    depends_on:
+      - redis-local
+    build: .
+    container_name: api
+    ports:
+     - "5000:5000"
+    environment:
+      REDIS_ADDRESS: '172.17.0.1'
+      REDIS_PORT: '6379'
+    networks:
+      - link
+networks:
+  link:
+    driver: bridge
