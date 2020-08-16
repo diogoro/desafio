@@ -8,6 +8,14 @@ Os micro serviços deverão serem desenvolvidos na linguagem python e publicados
 
 ![](https://github.com/diogoro/desafio/blob/master/solucao.png)
 
+
+### Payloads dos serviços
+[Payload Microsserviço A](https://github.com/diogoro/desafio/wiki/Payload-Microserviço-da-Base-A)
+
+[Payload Microsserviço B](https://github.com/diogoro/desafio/wiki/Payload-Microserviço-da-Base-B)
+
+O payload do microsserviço C pode ser visto no arquivo do postman [arquivo](https://github.com/diogoro/desafio/blob/master/Desafio.postman_collection.json)
+
 ## Aplicação
 
 A aplicação desenvolvida é o micro serviço que acessa a base C, que serve para manter os eventos financeiros de um CPF. O arquivo Desafio.postman_collection.json pode ser usado para testes da aplicação.
