@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "15630e8d-219b-47fb-b1d4-f808e438a5e2",
+		"name": "Desafio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Finance Event ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/financeEvent/31632849143",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"financeEvent",
+						"31632849143"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Finance Event",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cpf\": \"31632849143\",\n    \"event\": {\n        \"lastSearchBureau\": \"25/04/2020\",\n        \"lastPurchaseCreditCard\": {\n            \"date\": \"13/08/2020\",\n            \"value\": 25.00,\n            \"place\": \"Lojas Americanas\",\n            \"cardNumber\": \"123456789\"\n        },\n        \"financialReports\": [\n            {\n                \"bank\": \"Itau\",\n                \"type\": \"deposito\",\n                \"signal\": \"credito\",\n                \"value\": 90.00\n            },\n            {\n                \"bank\": \"Caixa\",\n                \"type\": \"saque\",\n                \"signal\": \"debito\",\n                \"value\": 13.00\n            }\n        ]\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/financeEvent",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"financeEvent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Finance Event",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/financeEvent/31632849143",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"financeEvent",
+						"31632849143"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Finance Event",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"event\": {\n        \"lastSearchBureau\": \"25/04/2020\",\n        \"lastPurchaseCreditCard\": {\n            \"date\": \"13/08/2020\",\n            \"value\": 25.00,\n            \"place\": \"Lojas Americanas\",\n            \"cardNumber\": \"123456789\"\n        },\n        \"financialReports\": [\n            {\n                \"bank\": \"Itau\",\n                \"type\": \"deposito\",\n                \"signal\": \"credito\",\n                \"value\": 90.00\n            },\n            {\n                \"bank\": \"Caixa\",\n                \"type\": \"saque\",\n                \"signal\": \"debito\",\n                \"value\": 13.00\n            }\n        ]\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/financeEvent/31632849143",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"financeEvent",
+						"31632849143"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
